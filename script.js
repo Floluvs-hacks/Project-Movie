@@ -51,12 +51,12 @@ function searchMovie() {
   loader.style.display = 'block';
 
   //  Search movies by name (s=)
-  fetch(`http://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
+  fetch(`https://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
     .then(response => response.json())
     .then(data => {
       if (data.Response === "True") {
         const imdbFetches = data.Search.map(movie =>
-          fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apiKey}`)
+          fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apiKey}`)
             .then(response => response.json())
         );
 
