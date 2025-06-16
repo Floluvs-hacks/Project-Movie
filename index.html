@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="App.css">
+    <title>Movie Activists</title>
+</head>
+<body>
+    <div class="container">
+    <h1>🎬 Movie Activists</h1>
+    
+         <input type="text" id="movieInput" placeholder="What story brings you here?"/>                                  
+         <button onclick="searchMovie()">Search</button>
+         <button id="toggleTheme">Toggle Theme</button>
+       
+
+          <div id="loader" class="loader"></div>
+           <!--movie display-->
+         <main id="movie-container"></main>
+    <div id="movieInfo"></div>
+    <div id="error" class="error"></div>
+  </div>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
